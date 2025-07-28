@@ -19,7 +19,7 @@ To use this module, you should have Terraform installed and configured for AWS. 
 # Example : alb
 ```hcl
 module "alb" {
-  source                     = "git::https://github.com/shanav-tech/terraform-aws-lb.git?ref=v1.0.0"
+  source                     = "git::https://github.com/Shanav-Technologies/terraform-aws-lb.git?ref=v1.0.0"
 
   name                       = local.name
   environment = local.environment
@@ -93,7 +93,7 @@ module "alb" {
 # Example : clb
 ```hcl
 module "clb" {
-  source             = "git::https://github.com/shanav-tech/terraform-aws-lb.git?ref=v1.0.0"
+  source             = "git::https://github.com/Shanav-Technologies/terraform-aws-lb.git?ref=v1.0.0"
 
   name               = "app"
   load_balancer_type = "classic"
@@ -130,7 +130,7 @@ module "clb" {
 # Example : nlb
 ```hcl
 module "nlb" {
-  source                     = "git::https://github.com/shanav-tech/terraform-aws-lb.git?ref=v1.0.0"
+  source                     = "git::https://github.com/Shanav-Technologies/terraform-aws-lb.git?ref=v1.0.0"
 
   name                       = "app"
   enable                     = true
@@ -186,14 +186,14 @@ module "nlb" {
 
 
 ## Examples
-For detailed examples on how to use this module, please refer to the [examples](https://github.com/shanav-tech/terraform-aws-lb/tree/master/example) directory within this repository.
+For detailed examples on how to use this module, please refer to the [examples](https://github.com/Shanav-Technologies/terraform-aws-lb/tree/master/example) directory within this repository.
 
 ## License
-This Terraform module is provided under the **MIT** License. Please see the [LICENSE](https://github.com/shanav-tech/terraform-aws-lb/blob/master/LICENSE) file for more details.
+This Terraform module is provided under the **MIT** License. Please see the [LICENSE](https://github.com/Shanav-Technologies/terraform-aws-lb/blob/master/LICENSE) file for more details.
 
 ## Author
 Your Name
-Replace **MIT** and **shanav-tech** with the appropriate license and your information. Feel free to expand this README with additional details or usage instructions as needed for your specific use case.
+Replace **MIT** and **Shanav-Technologies** with the appropriate license and your information. Feel free to expand this README with additional details or usage instructions as needed for your specific use case.
 
 
 <!-- BEGIN_TF_DOCS -->
@@ -201,42 +201,42 @@ Replace **MIT** and **shanav-tech** with the appropriate license and your inform
 
 | Name | Version |
 |------|---------|
-| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.12.1 |
-| <a name="requirement_aws"></a> [aws](#requirement\_aws) | >= 5.99.1 |
-| <a name="requirement_tls"></a> [tls](#requirement\_tls) | >= 4.1.0 |
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.8.5 |
+| <a name="requirement_aws"></a> [aws](#requirement\_aws) | 6.5.0 |
+| <a name="requirement_tls"></a> [tls](#requirement\_tls) | 4.1.0 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_aws"></a> [aws](#provider\_aws) | >= 5.99.1 |
+| <a name="provider_aws"></a> [aws](#provider\_aws) | 6.5.0 |
 
 ## Modules
 
 | Name | Source | Version |
 |------|--------|---------|
-| <a name="module_labels"></a> [labels](#module\_labels) | git::https://github.com/shanav-tech/terraform-aws-labels.git | v1.0.0 |
+| <a name="module_labels"></a> [labels](#module\_labels) | git::https://github.com/Shanav-Technologies/terraform-aws-labels.git | v1.0.0 |
 
 ## Resources
 
 | Name | Type |
 |------|------|
-| [aws_elb.main](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/elb) | resource |
-| [aws_lb.main](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/lb) | resource |
-| [aws_lb_listener.http](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/lb_listener) | resource |
-| [aws_lb_listener.https](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/lb_listener) | resource |
-| [aws_lb_listener.nhttp](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/lb_listener) | resource |
-| [aws_lb_listener.nhttps](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/lb_listener) | resource |
-| [aws_lb_listener_certificate.https_listener](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/lb_listener_certificate) | resource |
-| [aws_lb_listener_rule.http_tcp_listener_rule](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/lb_listener_rule) | resource |
-| [aws_lb_listener_rule.https_listener_rule](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/lb_listener_rule) | resource |
-| [aws_lb_target_group.main](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/lb_target_group) | resource |
-| [aws_lb_target_group_attachment.attachment](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/lb_target_group_attachment) | resource |
-| [aws_lb_target_group_attachment.nattachment](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/lb_target_group_attachment) | resource |
-| [aws_security_group.default](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/security_group) | resource |
-| [aws_security_group_rule.egress](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/security_group_rule) | resource |
-| [aws_security_group_rule.egress_ipv6](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/security_group_rule) | resource |
-| [aws_security_group_rule.ingress](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/security_group_rule) | resource |
+| [aws_elb.main](https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/elb) | resource |
+| [aws_lb.main](https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/lb) | resource |
+| [aws_lb_listener.http](https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/lb_listener) | resource |
+| [aws_lb_listener.https](https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/lb_listener) | resource |
+| [aws_lb_listener.nhttp](https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/lb_listener) | resource |
+| [aws_lb_listener.nhttps](https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/lb_listener) | resource |
+| [aws_lb_listener_certificate.https_listener](https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/lb_listener_certificate) | resource |
+| [aws_lb_listener_rule.http_tcp_listener_rule](https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/lb_listener_rule) | resource |
+| [aws_lb_listener_rule.https_listener_rule](https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/lb_listener_rule) | resource |
+| [aws_lb_target_group.main](https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/lb_target_group) | resource |
+| [aws_lb_target_group_attachment.attachment](https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/lb_target_group_attachment) | resource |
+| [aws_lb_target_group_attachment.nattachment](https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/lb_target_group_attachment) | resource |
+| [aws_security_group.default](https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/security_group) | resource |
+| [aws_security_group_rule.egress](https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/security_group_rule) | resource |
+| [aws_security_group_rule.egress_ipv6](https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/security_group_rule) | resource |
+| [aws_security_group_rule.ingress](https://registry.terraform.io/providers/hashicorp/aws/6.5.0/docs/resources/security_group_rule) | resource |
 
 ## Inputs
 
@@ -293,7 +293,7 @@ Replace **MIT** and **shanav-tech** with the appropriate license and your inform
 | <a name="input_load_balancer_delete_timeout"></a> [load\_balancer\_delete\_timeout](#input\_load\_balancer\_delete\_timeout) | Timeout value when deleting the ALB. | `string` | `"10m"` | no |
 | <a name="input_load_balancer_type"></a> [load\_balancer\_type](#input\_load\_balancer\_type) | The type of load balancer to create. Possible values are application or network. The default value is application. | `string` | `""` | no |
 | <a name="input_load_balancer_update_timeout"></a> [load\_balancer\_update\_timeout](#input\_load\_balancer\_update\_timeout) | Timeout value when updating the ALB. | `string` | `"10m"` | no |
-| <a name="input_managedby"></a> [managedby](#input\_managedby) | ManagedBy, eg 'shanav-tech'. | `string` | `"shanav-tech"` | no |
+| <a name="input_managedby"></a> [managedby](#input\_managedby) | ManagedBy, eg 'Shanav-Technologies'. | `string` | `"Shanav-Technologies"` | no |
 | <a name="input_name"></a> [name](#input\_name) | Name  (e.g. `app` or `cluster`). | `string` | `""` | no |
 | <a name="input_preserve_host_header"></a> [preserve\_host\_header](#input\_preserve\_host\_header) | Indicates whether Host header should be preserve and forward to targets without any change. Defaults to false. | `bool` | `false` | no |
 | <a name="input_protocol"></a> [protocol](#input\_protocol) | The protocol. If not icmp, tcp, udp, or all use the. | `string` | `"tcp"` | no |
